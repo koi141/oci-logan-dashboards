@@ -2,6 +2,9 @@
 
 
 ## Logs
+- Details for Network Firewall Logs  
+    https://docs.oracle.com/en-us/iaas/Content/Logging/Reference/details_for_networkfirewall.htm
+
 ### Threat Log
 - Action
     - allow: Flood detection alertを検知
@@ -14,6 +17,7 @@
     - block-url: URLフィルタリングにより、セッションをブロック
     - block-ip: 脅威を検知し、クライアントIPをブロック
     - random-drop: Floodを検知し、セッションをランダムにドロップ
+
 
 ### Traffic Log
 - Action
@@ -33,6 +37,28 @@
     - RESET BOTH
     - RESET CLIENT
     - RESET SERVER
+
+
+
+## Parser
+### OCI Network Firewall Traffic Log Format
+(Oracle定義)
+
+![alt text](./images/parser_nfw_trafficLog.png)
+
+
+### OCI Network Firewall Threat Log Format
+(Oracle定義)
+
+![alt text](./images/parser_nfw_threatLog.png)
+
+
+### OCI Network Firewall Tunnel Log Format
+(Oracle定義)
+
+![alt text](./images/parser_nfw_tunnellLog_1.png)
+![alt text](./images/parser_nfw_tunnellLog_2.png)
+
 
 
 ## 参考リンク
