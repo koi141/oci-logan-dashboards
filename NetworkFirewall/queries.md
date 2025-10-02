@@ -19,7 +19,7 @@
 
 - **接続元IPアドレスのトップランキング**  
     バーチャートやテーブルで、最も多いアクセス元を可視化。特定の国やIPから集中していないか確認。
-
+    ```
     'Log Source' = 'OCI Network Firewall Traffic Logs' | stats count as logrecords by 'Client Host Country' | sort -logrecords | top logrecords
     ```
     ![alt text](./images/sample-nfw-1_5.png)
